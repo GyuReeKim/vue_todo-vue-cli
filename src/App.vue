@@ -1,17 +1,24 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <HelloWorld msg="hello vue"/> -->
+    <LoginForm/>
+    <TodoList/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+import TodoList from './components/TodoList.vue'
+import LoginForm from './components/LoginForm.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    // HelloWorld,
+    // 등록을 해야 에러가 없어진다.
+    TodoList,
+    LoginForm
   }
 }
 </script>
